@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 8%;
+  margin-right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo img {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.navlinks {
+  border-radius: 0 150px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 92vh;
+  width: 30%;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  top: 8vh;
+  background: #a878d8;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  z-index: 9999;
+}
+
+.navlink a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.burger {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.burger img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.closebutton {
+  position: absolute;
+  top: 0;
+  right: -20%;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  pointer-events: none;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.closebutton img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.showclosebutton {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.navactive {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.searchcontainer {
+  width: 300px;
+  height: 95%;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #9060a8;
+}
+
+.searchcontainer button {
+  width: 15%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.searchcontainer button img {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.searchcontainer input {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 2px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  float: right;
+  height: 100%;
+  width: 85%;
+  background: transparent;
+  color: black;
+  border-radius: 5px;
+}
+
+.cartcontainer,
+.profilecontainer {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cartcontainer img,
+.profilecontainer img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.placeholdercontainer {
+  height: 80vh;
+}
+
+footer {
+  width: 100%;
+  background-color: #a878d8;
+  padding: 50px 200px;
+}
+
+footer .footerhead .footerlogocontainer {
+  width: 200px;
+}
+
+footer .footerhead .footerlogocontainer img {
+  width: 100%;
+}
+
+footer .footerlinkscontainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footercoltitle {
+  font-size: 16px;
+  color: #f0d8f0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+footer .footercollinklist {
+  list-style-type: none;
+}
+
+footer .footercollinklist li {
+  margin-top: 5px;
+}
+
+footer .footercollinklist li a {
+  font-size: 14px;
+  color: #f0d8f0;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+footer .footercol3 {
+  text-align: center;
+}
+
+footer .footercol3 .footersocialicons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}
+
+footer .footercol3 .footersocialicons li a img {
+  width: 25px;
+  height: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .placeholdercontainer {
+    background: red;
+  }
+  footer {
+    padding: 20px 40px;
+  }
+  footer .footerhead .footerlogocontainer {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .placeholdercontainer {
+    background: yellow;
+  }
+  nav .searchcontainer {
+    width: 150px;
+  }
+  nav .searchcontainer input {
+    font-size: 14px;
+  }
+  nav .searchcontainer button img {
+    width: 60%;
+  }
+  nav .logo {
+    margin-right: 10px;
+    width: 20%;
+  }
+  nav .logo img {
+    margin-top: 5px;
+  }
+  .navlinks {
+    width: 100%;
+  }
+  .closebutton {
+    right: 0;
+  }
+  footer {
+    padding: 10px 20px;
+  }
+  footer .footerhead .footerlogocontainer {
+    width: 150px;
+  }
+  footer .footerlinkscontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footerlinkscontainer div {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
